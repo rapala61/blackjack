@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    title Blackjack
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js')
+    script(type='text/javascript', src='js/blackjack.js')
+    style.
+      * {
+        box-sizing: border-box;
+      }
+      .main-content {
+        text-align: center;
+      }
+      .table-container {
+        width: 800px;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        background-image: url('img/blackjack_bg.jpg');
+      }
+      .cards-container {
+        border: solid red 1px;
+        margin: 10px 10px;
+        height: 100px;
+      }
+  body
+    div(class='main-content')
+      h3 BlackJack
+      div(class='table-container')
+        div(class='cards-container')
+        div(class='cards-container')
+        div(class='actions')
+          div(class='place-bet')
+            button Place bet
+            input(name='bet-amount')
+          div(class='deal')
+            button Deal!
+          
+        
+
+
+    script(type='text/javascript').
+      $('document').ready(function() {
+        //- setUpListeners();
+      });
